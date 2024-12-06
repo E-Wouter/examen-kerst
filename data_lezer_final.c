@@ -37,7 +37,7 @@ void process_existing_data() {
         return;
     }
 
-    char line[100];
+    int line;
     while((aantal_dagen) > 0) {
         char datum_tijd_stroom[DATE_TIME_LEN];
         int tarief_indicator; //unused
@@ -49,7 +49,6 @@ void process_existing_data() {
         float totaal_nachtopbrengst;
         char datum_tijd_gas[DATE_TIME_LEN];
         float totaal_gasverbruik;
-
         fscanf(payload,"%[^;];%f;%f;%f;%f;%[^';'];%f",
         datum_tijd_stroom[DATE_TIME_LEN], totaal_dagverbruik, totaal_nachtverbruik, totaal_dagopbrengst, totaal_nachtopbrengst, datum_tijd_gas[DATE_TIME_LEN], totaal_gasverbruik );
         printf("%*s\n", 10, "-");
