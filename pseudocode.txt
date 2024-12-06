@@ -1,0 +1,5 @@
+Het programma start de broker op. als dat niet lukt komt er een error in de terminal.
+Als de connectie niet lukt print er nog een error.
+Als de connectielukt, wacht hij op de data.
+Het slaagd elke csv op in het programma op in output.txt.
+De waarden uitgelezen, en dag per dag geprint in de terminal met de waarden erbij.
